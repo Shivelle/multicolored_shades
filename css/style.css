@@ -1,0 +1,136 @@
+/*===== COLORS | FONTS =====*/ 
+:root {
+  --main-blue: #00a2d2;
+  --main-green: #449d44; 
+}
+
+
+/*===== GENERAL =====*/ 
+body {
+    position: relative;
+	/*-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;*/
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+section {
+    height: 100vh;
+}
+
+section:nth-of-type(2) {
+    background: #efefef;
+}
+
+canvas {
+    position: absolute;
+}
+
+.scroll-line {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 16px;
+      background: var(--main-green);
+      transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1.66) width;
+      z-index: 999;
+}
+
+
+/*===== NAVBAR =====*/ 
+#mainNav {
+    margin-right: 10%;
+}
+
+.navbar-brand {
+    font-family: 'Sedgwick Ave', cursive;
+    margin-left: 10%;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    font-size: 2em;
+    margin-top: .5em;
+    line-height: 1em;
+    border: 5px solid var(--main-green);
+    background: #67B26F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#mainNav a {
+    border-bottom: 3px solid transparent;
+    padding-bottom: 0;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    padding-left: 1em;
+}
+
+#mainNav a:hover {
+    border-bottom: 3px solid var(--main-green);
+}
+
+.navbar-inverse .navbar-nav .active>.nav-link, 
+.navbar-inverse .navbar-nav .nav-link.active, 
+.navbar-inverse .navbar-nav .nav-link.open, 
+.navbar-inverse .navbar-nav .open>.nav-link {
+    color: var(--main-green);
+}
+
+.bg-inverse {
+    background: none; 
+}
+
+/*===== HEADER =====*/ 
+#particles-js {
+    position: relative;
+    background-image: url('../img/city_pw.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: var(--main-blue);
+    background-blend-mode: multiply;
+    height: 100vh;
+}
+
+.intro {
+    position: absolute;
+    color: #fff;
+    top: 30vh;
+    left: 10%; 
+}
+
+h1 {
+    font-size: 5em;
+    font-weight: 600;
+}
+
+.small-head {
+    font-size: .5em;
+}
+
+#subtitle {
+    height: 20px;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+#header-btns {
+    padding-top: 10vh;
+}
+
+#header-btns button {
+    margin-right: 10px; 
+}
