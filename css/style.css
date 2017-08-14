@@ -208,12 +208,16 @@ h1 {
 /*===== CONTACT =====*/
 #contact {
     background: var(--main-blue);
-    padding: 2em;
+}
+
+#contact .container-fluid {
+    padding-left: 0;
 }
 
 .contact-title {
     text-align: center;
 }
+
 
 /*===== FOOTER =====*/ 
 footer {
