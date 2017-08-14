@@ -189,9 +189,21 @@ h1 {
 }
 
 /*===== TESTIMONIALS =====*/ 
+#testimonials {
+    padding: 1em;
+}
 
 /*===== CONTACT =====*/
+#contact {
+    min-height: 200px;
+    background: var(--main-blue);
+}
 
 /*===== FOOTER =====*/ 
+footer {
+    background: #303030;
+    color: #efefef;
+    padding: 1em;
+}
 
 /*===== MEDIA =====*/ 

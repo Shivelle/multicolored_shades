@@ -1,7 +1,7 @@
-console.log('Ready for scripty stuff'); 
-
+// Variables
 const scrollLine = document.querySelector('.scroll-line');
 
+// Functions
 function fillScrollLine() {
   const windowHeight    = window.innerHeight;
   const fullHeight      = document.body.clientHeight;
@@ -10,9 +10,11 @@ function fillScrollLine() {
   scrollLine.style.width = `${percentScrolled}%`;
 }
 
-
+// Listeners
 window.addEventListener('scroll', debounce(fillScrollLine));
 
+/* ========================================= */ 
+/* default debounce function */ 
 function debounce(func, wait = 15, immediate) {
   var timeout;
   return function() {
