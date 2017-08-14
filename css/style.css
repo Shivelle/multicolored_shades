@@ -19,19 +19,24 @@ h1, h2, h3, h4 {
 }
 
 a:hover {
-    cursor: hand;
+    cursor: pointer;
 }
 
 .btn {
     border-radius: 0;
 }
 
+.btn:hover {
+    cursor: pointer;
+}
+
 section {
     
 }
 
-section:nth-of-type(2) {
-    background: #efefef;
+
+.title {
+    margin-bottom: 1em;
 }
 
 canvas {
@@ -176,6 +181,7 @@ h1 {
 #about {
     padding: 2em;
     text-align: center;
+    background: #f0ede8;
 }
 
 .portrait {
@@ -190,13 +196,23 @@ h1 {
 
 /*===== TESTIMONIALS =====*/ 
 #testimonials {
-    padding: 1em;
+    padding: 3em 2em;
+    text-align: center;
+}
+
+.testimonial-icon {
+    font-size: 2.5em;
+    color: var(--main-blue);
 }
 
 /*===== CONTACT =====*/
 #contact {
-    min-height: 200px;
     background: var(--main-blue);
+    padding: 2em;
+}
+
+.contact-title {
+    text-align: center;
 }
 
 /*===== FOOTER =====*/ 
