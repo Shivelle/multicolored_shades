@@ -156,6 +156,10 @@ h1 {
     margin-bottom: 1em;
 }
 
+.service-items {
+    padding: 1em 2em 3em 2em;
+}
+
 .service-item {
     margin-bottom: 1em;
     text-align: center;
@@ -189,7 +193,7 @@ h1 {
 }
 
 .portrait img {
-    border-radius: 50%;
+    border-radius: 5%;
     height: 50%;
     width: 50%;
 }
@@ -198,6 +202,10 @@ h1 {
 #testimonials {
     padding: 3em 2em;
     text-align: center;
+}
+
+.testimonials-content {
+    padding-bottom: 3em;
 }
 
 .testimonial-icon {
@@ -211,12 +219,22 @@ h1 {
 }
 
 #contact .container-fluid {
-    padding-left: 0;
+    padding: 0;
 }
+
+#contact .container-content {
+    
+}
+
 
 .contact-title {
     text-align: center;
 }
+
+.contact-txt {
+    padding: 2em 3em 1em 0;
+}
+
 
 
 /*===== FOOTER =====*/ 
