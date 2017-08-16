@@ -45,11 +45,15 @@ canvas {
       height: 16px;
       background: var(--main-green);
       transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1.66) width;
-      z-index: 99999 !important;
+      z-index: 999;
 }
 
 
 /*===== NAVBAR =====*/ 
+#navigation {
+    z-index: 99;    
+}
+
 #mainNav {
     margin-right: 10%;
 }
