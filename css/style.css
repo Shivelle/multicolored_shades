@@ -42,7 +42,7 @@ canvas {
       position: fixed;
       top: 0;
       left: 0;
-      height: 16px;
+      height: 12px;
       background: var(--main-green);
       transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1.66) width;
       z-index: 999;
@@ -56,6 +56,7 @@ canvas {
 
 #mainNav {
     margin-right: 10%;
+    text-align: center;
 }
 
 .navbar-brand {
@@ -73,17 +74,33 @@ canvas {
     background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+
 #mainNav a {
     border-bottom: 3px solid transparent;
-    padding-bottom: 0;
-    font-size: 1.1em;
+    padding: 0 1em 0 1em;
     text-transform: uppercase;
-    padding-left: 1em;
+    display: inline-block;
+    position: relative;
 }
 
-#mainNav a:hover {
-    border-bottom: 3px solid var(--main-green);
+#mainNav a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--main-green);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
 }
+
+#mainNav a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
 
 .navbar-inverse .navbar-nav .active>.nav-link, 
 .navbar-inverse .navbar-nav .nav-link.active, 
