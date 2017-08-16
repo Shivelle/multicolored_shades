@@ -93,9 +93,6 @@ canvas {
     color: var(--main-green);
 }
 
-.bg-inverse {
-    background: none; 
-}
 
 /*===== HEADER =====*/ 
 #particles-js {
@@ -146,14 +143,26 @@ h1 {
 }
 
 .service-intro {
-    padding-top: 2em;
-    padding-right: 2em;
+    padding: 2em;
     background: var(--main-green);
     color: #fff;
+    font-size: 1.2em;
 }
 
 .service-intro h2 {
     margin-bottom: 1em;
+}
+
+.slogan {
+    background: rgba(255,255,255, .2);
+    padding: .5em;
+    color: #fff; 
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+.service-intro p:nth-of-type(4) {
+    padding-top: 2em;
 }
 
 .service-items {
@@ -163,7 +172,7 @@ h1 {
 .service-item {
     margin-bottom: 1em;
     text-align: center;
-    height: 100%;
+    padding: 1em;
 }
 
 .service-line-short {
@@ -204,6 +213,10 @@ h1 {
     text-align: center;
 }
 
+.testimonial {
+    padding: 1em;
+}
+
 .testimonials-content {
     padding-bottom: 3em;
 }
@@ -213,6 +226,11 @@ h1 {
     color: var(--main-blue);
 }
 
+.testimonial-name {
+    font-style: italic;
+    font-size: .9em;
+}
+
 /*===== CONTACT =====*/
 #contact {
     background: var(--main-blue);
@@ -220,10 +238,6 @@ h1 {
 
 #contact .container-fluid {
     padding: 0;
-}
-
-#contact .container-content {
-    
 }
 
 
@@ -243,5 +257,6 @@ footer {
     color: #efefef;
     padding: 1em;
 }
+
 
 /*===== MEDIA =====*/ 
