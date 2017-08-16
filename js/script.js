@@ -1,17 +1,34 @@
 // Variables
-const scrollLine = document.querySelector('.scroll-line');
+const scrollLine      = document.querySelector('.scroll-line');
+const windowHeight    = window.innerHeight;
+const nav             = document.querySelector('#navigation'); 
+
 
 // Functions
 function fillScrollLine() {
-  const windowHeight    = window.innerHeight;
   const fullHeight      = document.body.clientHeight;
   const scrolled        = window.scrollY;
   const percentScrolled = (scrolled / (fullHeight - windowHeight)) * 100;
   scrollLine.style.width = `${percentScrolled}%`;
+
+}
+
+
+
+function updateNav() {
+  const fullHeight      = document.body.clientHeight;
+  const scrolled        = window.scrollY;
+  if (scrolled > windowHeight) {
+    nav.style.background = "#303030"; 
+  }
+  else {
+    nav.style.background = "none"; 
+  }
 }
 
 // Listeners
 window.addEventListener('scroll', debounce(fillScrollLine));
+window.addEventListener('scroll', updateNav);
 
 /* ========================================= */ 
 /* default debounce function */ 
