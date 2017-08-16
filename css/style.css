@@ -227,6 +227,14 @@ h1 {
 }
 
 /*===== MOTTO =====*/ 
+#motto {
+    height: 30vh;
+    background-image: url('../img/girl_city.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 /*===== TESTIMONIALS =====*/ 
 #testimonials {
