@@ -11,6 +11,7 @@ body {
 	/*-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;*/
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -238,7 +239,6 @@ h1 {
 /*===== MOTTO =====*/ 
 #motto {
     width: 100%;
-    height: auto;
     background-image: url('../img/girl_city.jpeg');
     background-position: center;
     background-repeat: no-repeat;
@@ -247,12 +247,22 @@ h1 {
     background-color: var(--main-blue);
     background-blend-mode: multiply;
     height: 33vh;
+    position: relative;
+    overflow: hidden;
 
 }
 
 .motto-txt {
+    position: absolute;
     color: #fff;
     text-align: center;
+    margin: 0;
+    max-width: 75vw;
+    border: 2px solid #fff;
+    padding-top: 1em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /*===== TESTIMONIALS =====*/ 
