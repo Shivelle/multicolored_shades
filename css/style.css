@@ -215,25 +215,40 @@ h1 {
 /*===== ABOUT =====*/ 
 #about {
     text-align: center;
-    background: #fff;
+    background-color: #fff;
 }
 
 .about-txt {
     padding: 2em;
+    z-index: 2;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #fff, rgba(255,255,255, .5)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #fff, rgba(255,255,255, .5)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #fff, rgba(255,255,255, .5)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #fff, rgba(255,255,255, .5)); /* Standard syntax */
 }
 
 .resume {
     padding-top: 3em;
+    text-align: left;
+    font-size: 1.2em;
 }
 
 .portrait {
     margin: 0 auto;
+    position: relative;
 }
 
 .portrait img {
-    max-width: 100%!important;
-    max-height: auto;
+    /*max-width: 100%!important;*/
+    /*max-height: auto;*/
+    /*width: auto;*/
+    height: 70%;
     width: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
 }
 
 /*===== MOTTO =====*/ 
@@ -259,7 +274,7 @@ h1 {
     margin: 0;
     max-width: 75vw;
     border: 2px solid #fff;
-    padding-top: 1em;
+    padding: 1em;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
