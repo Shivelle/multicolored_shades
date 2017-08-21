@@ -213,9 +213,16 @@ h1 {
 
 /*===== ABOUT =====*/ 
 #about {
-    padding: 2em;
     text-align: center;
     background: #fff;
+}
+
+.about-txt {
+    padding: 2em;
+}
+
+.resume {
+    padding-top: 3em;
 }
 
 .portrait {
@@ -223,17 +230,29 @@ h1 {
 }
 
 .portrait img {
-
+    max-width: 100%!important;
+    max-height: auto;
+    width: auto;
 }
 
 /*===== MOTTO =====*/ 
 #motto {
-    height: 30vh;
+    width: 100%;
+    height: auto;
     background-image: url('../img/girl_city.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-color: var(--main-blue);
+    background-blend-mode: multiply;
+    height: 33vh;
+
+}
+
+.motto-txt {
+    color: #fff;
+    text-align: center;
 }
 
 /*===== TESTIMONIALS =====*/ 
