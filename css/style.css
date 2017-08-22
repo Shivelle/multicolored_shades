@@ -259,15 +259,16 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-color: var(--main-blue);
+    background-color: #fff;
     background-blend-mode: multiply;
-    height: 33vh;
+    min-height: 44vh;
     position: relative;
     overflow: hidden;
 
 }
 
 .motto-txt {
+    margin: 2em;
     position: absolute;
     color: #fff;
     text-align: center;
@@ -307,20 +308,50 @@ h1 {
 
 /*===== CONTACT =====*/
 #contact {
-    background: var(--main-blue);
+
 }
 
 #contact .container-fluid {
     padding: 0;
 }
 
+#contact .row {
+    position: relative;
+}
+
+.map img {
+    height: auto;
+    width: 100%;
+    padding: 0;
+}
 
 .contact-title {
     text-align: center;
+    z-index: 999;
 }
 
 .contact-txt {
+    background-image: url('../img/family.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--main-blue);
+    background-blend-mode: overlay;
     padding: 2em 3em 1em 0;
+}
+
+.list-group {
+    background: none;
+    border: none;
+    border-radius: 0;
+    margin-left: 3em;
+    z-index: 999;
+}
+
+.list-group-item {
+    background: none;
+    border: none;
+    padding: 5px;
 }
 
 
@@ -332,5 +363,8 @@ footer {
     padding: 1em;
 }
 
+.adress p {
+    margin-bottom: 0;
+}
 
 /*===== MEDIA =====*/ 
