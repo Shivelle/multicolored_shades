@@ -259,8 +259,8 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-color: #fff;
-    background-blend-mode: multiply;
+    background-color: rgba(0,0,0, 0.4);
+    background-blend-mode: overlay;
     min-height: 44vh;
     position: relative;
     overflow: hidden;
@@ -335,8 +335,9 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: var(--main-blue);
-    background-blend-mode: overlay;
+    color: #fff;
+    background-color: var(--main-green);
+    background-blend-mode: darken;
     padding: 2em 3em 1em 0;
 }
 
@@ -344,7 +345,7 @@ h1 {
     background: none;
     border: none;
     border-radius: 0;
-    margin-left: 3em;
+    margin-left: 6em;
     z-index: 999;
 }
 
@@ -352,6 +353,11 @@ h1 {
     background: none;
     border: none;
     padding: 5px;
+}
+
+.list-group-item .fa {
+    margin-right: 1.5em;
+    font-size: 1.3em;
 }
 
 
