@@ -356,8 +356,9 @@ h1 {
 }
 
 .list-group-item .fa {
-    margin-right: 1.5em;
-    font-size: 1.3em;
+    margin-right: 14px;
+    font-size: 20px;
+    text-align: center;
 }
 
 
