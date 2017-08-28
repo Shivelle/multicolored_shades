@@ -327,6 +327,8 @@ h1 {
 
 .contact-title {
     text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 5px solid #fff;
     z-index: 999;
 }
 
@@ -359,6 +361,10 @@ h1 {
     margin-right: 14px;
     font-size: 20px;
     text-align: center;
+}
+
+.list-group-item .fa, .list-group-item a {
+    color: #eee;
 }
 
 
