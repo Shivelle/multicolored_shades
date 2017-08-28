@@ -106,7 +106,6 @@ canvas {
     left: 0;
 }
 
-
 .navbar-inverse .navbar-nav .active>.nav-link, 
 .navbar-inverse .navbar-nav .nav-link.active, 
 .navbar-inverse .navbar-nav .nav-link.open, 
@@ -114,6 +113,10 @@ canvas {
     color: var(--main-green);
 }
 
+.navbar-toggler {
+    margin-top: 10px;
+    border: none;
+}
 
 /*===== HEADER =====*/ 
 #particles-js {
