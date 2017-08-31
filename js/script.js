@@ -60,3 +60,15 @@ const typed = new Typed('#subtitle', {
     backDelay: 800,
     loop: true
 });
+
+const typed2 = new Typed('#slogan', {
+    strings: [" Mit professioneller <strong>Sprach- und Kulutrbegleitung</strong>.", "Mit helfender Hand durchs Neuland."], 
+    stringsElement: null,
+    typeSpeed: 65,
+    backSpeed: 25,
+    startDelay: 100, 
+    shuffle: false, 
+    showCursor: false, 
+    backDelay: 800,
+    loop: true
+});
